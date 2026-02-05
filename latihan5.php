@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>latihan array multidimensi</title>
+</head>
 
 <body>
+
     <?php
-    // Menciptakan array multidimensional
-    $myArray = array(
-        // Default key untuk setiap elemen
-// dimulai dari 0 (nol)
-        array("Susi", "Budi", "Agus"),
-        array("Sigit", "Tika", "Lina")
-    );
-    // Tampilkan informasi array
-    print_r($myArray);
+    // menciptakan array multidimensional [cite: 12]
+    $myarray = [
+        ["susi", "budi", "agus"],
+        ["sigit", "tika", "lina"]
+    ];
+
+    // menampilkan semua elemen menggunakan nested foreach
+    foreach ($myarray as $array1) {
+        foreach ($array1 as $elemen) {
+            echo $elemen . ", ";
+        }
+        echo "<br>";
+    }
+
     echo "<hr>";
-    // Tampilkan elemen array
-    echo $myArray[0][0] . "<br>";
-    echo $myArray[0][1] . "<br>";
+
+    // informasi tambahan berdasarkan materi dhcp [cite: 1, 9]
+// pada jaringan nyata, client mendapatkan konfigurasi otomatis [cite: 10, 68]
     ?>
+
 </body>
 
 </html>
